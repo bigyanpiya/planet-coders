@@ -122,7 +122,7 @@ def main():
         #         numerical_values.extend(extract_numerical_values(value))
 
         # st.write(numerical_values)
-        response = model.generate_content("In vertical table format give me other important datas and information of" + vehicle_class+"which could affect environment like how old car is, sound pollution etc")
+        response = model.generate_content("In vertical table format give me other important datas and information like sound prollution it creates etc about "+vehicle_class)
         st.write(response.text)
 
 if __name__ == "__main__":
